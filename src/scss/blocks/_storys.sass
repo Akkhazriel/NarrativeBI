@@ -1,0 +1,63 @@
+.storys
+    &__wrapper
+        background: var(--accent-bg-1)
+        margin: 0 12px
+    &__container
+        display: flex
+        flex-direction: column
+        align-items: center
+        row-gap: 64px
+    &__caption
+        display: flex
+        flex-direction: column
+        align-items: center
+        text-align: center
+        margin-top: 96px
+        .storys__title
+            color: var(--light)
+            font-size: 32px
+            font-family: var(--accent-font)
+            line-height: 48px
+            font-weight: 700
+        .storys__description
+            color: var(--light-1)
+            font-size: 18px
+            font-family: var(--main-font)
+            font-weight: 400
+            line-height: 40px
+            max-width: 785px
+    &__content
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        .storys__card
+            display: flex
+            flex-direction: column
+            background: #373552
+            padding: 0 0 0 56px
+            max-width: 530px
+            border-radius: 16px
+            position: relative
+            &:nth-child(2)
+                height: 542px
+            
+
+            .storys__card__title
+                color: var(--light)
+                font-family: var(--accent-font)
+                font-weight: 700
+                line-height: 40px
+                margin-top: 63px
+            .storys__card__title--small
+                font-size: 19px
+            .storys__card__title--big
+                font-size: 28px
+            
+            .storys-card__description
+                color: var(--light-1)
+                font-size: 16px
+                font-family: var(--main-font)
+                font-weight: 400
+                line-height: 32px
+                max-width: 400px
+            .storys-card__description--second
+                margin-bottom: 50px
