@@ -1,0 +1,113 @@
+.examples
+    &__container
+        padding-top: 127px
+        @media screen and ( max-width: 1050px )
+            padding: 127px 30px 0 30px
+    &__wrapper
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        text-align: center
+        row-gap: 38px
+    &__content
+        display: flex
+        flex-direction: column
+        align-items: center
+        row-gap: 8px
+        .examples-content__title
+            color: var(--main)
+            font-family: var(--accent-font)
+            font-size: 35px
+            font-weight: 700
+            line-height: 56px
+            max-width: 627px
+            @media screen and ( max-width: 700px )
+                font-size: 28px
+                max-width: 500px
+            @media screen and ( max-width: 499px )
+                font-size: 22px
+                max-width: 400px
+                line-height: 46px
+            @media screen and ( max-width: 399px )
+                font-size: 16px
+                max-width: 300px
+                line-height: 40px
+                margin-bottom: 10px
+        .examples-content__description
+            max-width: 701px
+            color: var(--main)
+            font-family: var(--main-font)
+            font-size: 18px
+            font-weight: 400
+            line-height: 40px
+            @media screen and ( max-width: 700px )
+                font-size: 16px
+                max-width: 500px
+            @media screen and ( max-width: 499px )
+                font-size: 14px
+                max-width: 360px
+                line-height: 36px
+            @media screen and ( max-width: 399px )
+                font-size: 12px
+                max-width: 340px
+                line-height: 30px
+                margin-bottom: 15px
+        .examples-content__link
+            color: var(--accent)
+            font-size: 20px
+            font-family: var(--main-font)
+            font-weight: 400
+            line-height: 32px
+            position: relative
+            &::after
+                content: ''
+                position: absolute
+                width: 0
+                height: 1px
+                bottom: 0
+                left: 50%
+                right: 50%
+                background: var(--accent)
+                transition: .3s linear
+            &:hover
+                &::after
+                    left: 0
+                    right: 0
+                    width: 100%
+    &__image
+        background-image: url('./../img/examples/examples-img.png')
+        position: relative
+        width: 1026px
+        height: 647px
+        @media screen and ( max-width: 999px )
+            width: 850px
+        @media screen and ( max-width: 999px )
+            width: 700px
+            background-size: contain
+            background-repeat: no-repeat
+            height: 500px
+        @media screen and ( max-width: 720px )
+            width: 600px
+            height: 400px
+        @media screen and ( max-width: 600px )
+            width: 500px
+            height: 350px
+        @media screen and ( max-width: 510px )
+            width: 400px
+            height: 250px
+        @media screen and ( max-width: 410px )
+            width: 300px
+            height: 200px
+        @media screen and ( max-width: 410px )
+            width: 200px
+            height: 150px
+        img
+            position: absolute
+            top: -17%
+            right: 10%
+            @media screen and ( max-width: 999px )
+                right: 0
+            @media screen and ( max-width: 600px )
+                width: 80px
+                
