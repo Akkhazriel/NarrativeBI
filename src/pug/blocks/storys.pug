@@ -1,4 +1,4 @@
-mixin storysCard(teg, title, desc__first, desc__second, image)
+mixin storysCard(teg, title, desc__first, desc__second, image)  
     .storys__card
         if image === '2'
             .storys-card__image
@@ -21,8 +21,10 @@ section.storys
                 p.storys__description.
                     With our secure and user-friendly solution, your company can easily explore a massive amount of data and get meaningful insights from that data in seconds.
             .storys__content
-                +storysCard('small','Personalized Anomaly Detection', 'Narrative BI’s proprietary outlier-detection algorithm removes human bias and brings hidden insights that can be missed by traditional BI tools and data analysts.', 'Narrative BI delivers personalized insights to the user regardless of their group, title, or challenge.', '1')
-                +storysCard('big', 'Make Quicker Decisions', 'Narrative BI users receive meaningful insights that lead to faster data-driven decisions.', 'By automating insights, users are empowered to drive the business forward without asking specialists to perform ad-hoc queries which slows them down.', '2')
-                +storysCard('big', 'Data Narratives', 'Narrative BI uses a linear approach to package insights for its users.', 'Similar to social media feeds, users will receive meaningful insights that can be pinned and shared with the team using simple functionality.', '3')
-                +storysCard('big', 'Eliminate Dependencies', 'Leadership, Marketing, Sales, Finance, and other non-technical areas of a business often struggle with the time it takes to gain insight from their data.', 'Narrative BI’s simple interface allows non-technical users to gain insights on their own eliminating dependencies on the data team within the organization.', '4')
+                .storys-content__cl.storys-content__cl-1
+                    +storysCard('small','Personalized Anomaly Detection', 'Narrative BI’s proprietary outlier-detection algorithm removes human bias and brings hidden insights that can be missed by traditional BI tools and data analysts.', 'Narrative BI delivers personalized insights to the user regardless of their group, title, or challenge.', '1')
+                    +storysCard('big', 'Data Narratives', 'Narrative BI uses a linear approach to package insights for its users.', 'Similar to social media feeds, users will receive meaningful insights that can be pinned and shared with the team using simple functionality.', '3')
+                .storys-content__cl.storys-content__cl-2
+                    +storysCard('big', 'Make Quicker Decisions', 'Narrative BI users receive meaningful insights that lead to faster data-driven decisions.', 'By automating insights, users are empowered to drive the business forward without asking specialists to perform ad-hoc queries which slows them down.', '2')
+                    +storysCard('big', 'Eliminate Dependencies', 'Leadership, Marketing, Sales, Finance, and other non-technical areas of a business often struggle with the time it takes to gain insight from their data.', 'Narrative BI’s simple interface allows non-technical users to gain insights on their own eliminating dependencies on the data team within the organization.', '4')
                 

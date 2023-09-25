@@ -7,6 +7,8 @@
         flex-direction: column
         align-items: center
         row-gap: 64px
+        @media screen and ( max-width: 1440px )
+            padding: 0 30px
     &__caption
         display: flex
         flex-direction: column
@@ -27,8 +29,28 @@
             line-height: 40px
             max-width: 785px
     &__content
-        display: grid
-        grid-template-columns: repeat(2, 1fr)
+        display: flex
+        column-gap: 16px
+        align-items: center
+        padding-bottom: 174px
+        .storys-content__cl
+            display: flex
+            flex-direction: column
+            column-gap: 16px
+            row-gap: 16px
+        .storys-content__cl-1
+            .storys__card
+                &:nth-child(2)
+                    &::before
+                        position: absolute
+                        content: ''
+                        width: 128px
+                        height: 157px
+                        background-image: url('./../img/storys/before-item.png')
+                        bottom: 0
+                        left: -20%
+                        @media screen and ( max-width: 1299px  )
+                            left: -5%
         .storys__card
             display: flex
             flex-direction: column
@@ -37,9 +59,6 @@
             max-width: 530px
             border-radius: 16px
             position: relative
-            &:nth-child(2)
-                height: 542px
-            
 
             .storys__card__title
                 color: var(--light)
