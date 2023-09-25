@@ -1,0 +1,17 @@
+mixin qaa-content__question(title, desc)
+    .qaa-content__question
+        h3.qaa-question__title= title
+        p.qaa-question__description= desc
+
+section.qaa
+    .qaa__wrapper 
+        .qaa__container 
+            .qaa__caption
+                h2.qaa__title What makes Narrative BI so unique?
+                p.qaa__description.
+                    Popular tools on the market either require specialized skills to make you or your team members work for deep unbiased analytical insights, while Narrative BI brings them right to you.
+            .qaa__content
+                +qaa-content__question('Predictive Insights', 'Using anomaly detection, Narrative BI’s proprietary algorithms generate meaningful insights for the user without the click of a button. Narrative BI uses time-series analysis to discover key trends from historical data to predict future outcomes.')
+                +qaa-content__question('Natural Language Processing', 'Narrative BI speaks your language. Through our patent-pending Natural Language Generation Engine, users can receive insights described in plain English.')
+                +qaa-content__question('Social Media Inspired User Interface', 'Narrative BI’s UI has a feel to social media platforms where users can easily discover insights and share what they find with the community. Users stay informed, can share insights with the team and get their questions answered without the hassle of learning a new tool. Narrative BI has created a fun platform that people like to use.')
+                +qaa-content__question('Collaboration & Reporting', 'Drag & drop insights to share with team members, other tools or emails are no longer needed to share knowledge. Marketing, leadership, sales, and other non-technical teams can now pin key insights on the company landing page, share projects, and create custom reports without going to the IT side of the business.')

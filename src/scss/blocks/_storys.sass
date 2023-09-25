@@ -21,6 +21,9 @@
             font-family: var(--accent-font)
             line-height: 48px
             font-weight: 700
+            @media screen and ( max-width: 450px )
+                font-size: 26px
+                max-width: 400px
         .storys__description
             color: var(--light-1)
             font-size: 18px
@@ -28,11 +31,17 @@
             font-weight: 400
             line-height: 40px
             max-width: 785px
+            @media screen and ( max-width: 450px )
+                font-size: 12px
+                line-height: 32px
+                max-width: 400px
     &__content
         display: flex
         column-gap: 16px
         align-items: center
         padding-bottom: 174px
+        @media screen and ( max-width: 450px )
+            flex-direction: column
         .storys-content__cl
             display: flex
             flex-direction: column
@@ -51,6 +60,8 @@
                         left: -20%
                         @media screen and ( max-width: 1299px  )
                             left: -5%
+                        @media screen and ( max-width: 899px )
+                            bottom: -25%   
         .storys__card
             display: flex
             flex-direction: column
@@ -59,7 +70,12 @@
             max-width: 530px
             border-radius: 16px
             position: relative
-
+            @media screen and ( max-width: 899px )
+                padding: 0 0 0 20px       
+            @media screen and ( max-width: 599px )
+                padding: 0 0 0 10px  
+            @media screen and ( max-width: 450px )
+                padding: 0 10px 0 10px 
             .storys__card__title
                 color: var(--light)
                 font-family: var(--accent-font)
@@ -68,9 +84,14 @@
                 margin-top: 63px
             .storys__card__title--small
                 font-size: 19px
+                @media screen and ( max-width: 899px )
+                    font-size: 16px                
             .storys__card__title--big
                 font-size: 28px
-            
+                @media screen and ( max-width: 899px )
+                    font-size: 22px
+                @media screen and ( max-width: 699px )
+                    font-size: 16px   
             .storys-card__description
                 color: var(--light-1)
                 font-size: 16px
@@ -78,5 +99,10 @@
                 font-weight: 400
                 line-height: 32px
                 max-width: 400px
+                @media screen and ( max-width: 899px )
+                    font-size: 12px
+                @media screen and ( max-width: 699px )
+                    font-size: 10px 
+                    line-height: 26px
             .storys-card__description--second
                 margin-bottom: 50px

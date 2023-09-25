@@ -1,0 +1,152 @@
+.qaa
+    &__wrapper
+        background-color: var(--accent-bg)
+        margin: 0 12px
+    &__container
+        display: flex
+        flex-direction: column
+        align-items: center
+        text-align: center
+        row-gap: 94px
+        @media screen and ( max-width: 799px )
+            padding: 0 30px
+    &__caption
+        margin-top: 103px
+        display: flex
+        flex-direction: column
+        text-align: center
+        row-gap: 13px
+        .qaa__title
+            color: var(--main)
+            font-family: var(--accent-font)
+            font-size: 32px
+            font-weight: 700
+            line-height: 46px
+            @media screen and ( max-width: 399px )
+                font-size: 26px
+                line-height: 32px
+        .qaa__description
+            max-width: 712px
+            color: var(--main)
+            font-family: var(--main-font)
+            font-size: 20px
+            font-weight: 400
+            line-height: 40px
+            @media screen and ( max-width: 399px )
+                font-size: 14px
+                line-height: 32px
+    &__content
+        margin-bottom: 110px
+        display: flex
+        justify-content: center
+        column-gap: 78px
+        row-gap: 47px
+        flex-wrap: wrap
+        @media screen and ( max-width: 699px )
+            align-items: center
+        @media screen and ( max-width: 550px )
+            row-gap: 97px 
+        @media screen and ( max-width: 399px )
+            row-gap: 120px
+        .qaa-content__question
+            display: flex
+            flex-direction: column
+            row-gap: 14px
+            align-items: flex-start
+            text-align: left        
+            @media screen and ( max-width: 699px )
+                align-items: center
+                text-align: center
+
+            &:nth-child(1)
+                .qaa-question__title
+                    &::before
+                        content: ''
+                        position: absolute
+                        top: 20%
+                        left: -43%
+                        background-image: url('./../img/qaa/1.svg')
+                        @media screen and ( max-width: 699px )
+                            top: -30%
+                        @media screen and ( max-width: 599px )
+                            top: -200%
+                            left: 40%
+            &:nth-child(2)
+                .qaa-question__title
+                    &::before
+                        content: ''
+                        position: absolute
+                        top: 20%
+                        left: -28%
+                        background-image: url('./../img/qaa/2.svg')
+                        @media screen and ( max-width: 699px )
+                            top: -30%
+                        @media screen and ( max-width: 599px )
+                            top: -200%
+                            left: 43%
+                        @media screen and ( max-width: 399px )
+                            top: -120%
+                            left: 43%
+                        @media screen and ( max-width: 299px )
+                            top: -120%
+                            left: 40%
+            &:nth-child(3)
+                .qaa-question__title
+                    &::before
+                        content: ''
+                        position: absolute
+                        top: 20%
+                        left: -23%
+                        background-image: url('./../img/qaa/3.svg')
+                        @media screen and ( max-width: 699px )
+                            top: -30%
+                        @media screen and ( max-width: 599px )
+                            top: -200%
+                            left: 43%
+                        @media screen and ( max-width: 440px )
+                            top: -100%
+                            left: 44%
+                        @media screen and ( max-width: 299px )
+                            top: -100%
+                            left: 40%
+            &:nth-child(4)
+                .qaa-question__title
+                    &::before
+                        content: ''
+                        position: absolute
+                        top: 20%
+                        left: -32%
+                        background-image: url('./../img/qaa/4.svg')
+                        @media screen and ( max-width: 699px )
+                            top: -30%
+                        @media screen and ( max-width: 599px )
+                            top: -200%
+                            left: 43%
+                        @media screen and ( max-width: 299px )
+                            top: -100%
+                            left: 40%
+            .qaa-question__title
+                color: var(--main)
+                font-family: var(--accent-font)
+                font-size: 20px
+                font-weight: 700
+                line-height: 28px
+                position: relative
+                &::before
+                    content: ''
+                    position: absolute
+                    width: 48px
+                    height: 48px
+            .qaa-question__description
+                color: var(--main)
+                font-family: var(--main-font)
+                font-size: 16px
+                font-weight: 400
+                line-height: 32px
+                max-width: 440px
+                @media screen and ( max-width: 499px )
+                    font-size: 12px
+                    line-height: 28px
+                @media screen and ( max-width: 299px )
+                    font-size: 8px
+                    line-height: 28px
