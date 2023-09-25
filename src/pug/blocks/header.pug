@@ -1,0 +1,18 @@
+header.header
+    .header__container
+        .header__row
+            a(href="№!").header__logo
+                img(src="./img/header/logo.svg", alt="Logotype")
+            nav.header__nav
+                -var navList = ['Product', 'Why narrative BI?', 'About', 'Get a demo'];
+                ul.nav__list
+                    for i, index in navList
+                        if index != 3
+                            li.nav__item
+                                a(href="#!").nav__link= i
+                        else
+                            a(href="#!").nav__btn= i  
+                .nav-menu
+                    span
+                    span
+                    span
