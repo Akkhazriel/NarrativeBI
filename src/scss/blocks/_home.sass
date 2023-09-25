@@ -1,0 +1,147 @@
+.home
+    &__wrapper
+        margin: 10px 12px 0px 12px
+        background: var(--accent-bg)
+    &__container
+        display: flex 
+        justify-content: space-between
+        align-items: center
+        column-gap: 94px
+        @media screen and ( max-width: 1439px)
+            padding: 0 80px
+        @media screen and ( max-width: 1350px)
+            padding: 0 30px
+        @media screen and ( max-width: 1199px )
+            padding-top: 80px
+            flex-direction: column
+            row-gap: 80px
+            justify-content: center
+            text-align: center
+    &__content
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        row-gap: 25px
+        @media screen and ( max-width: 1199px )
+            align-items: center
+        .home__title
+            color: var(--main)
+            font-size: 48px
+            font-family: var(--accent-font)
+            font-weight: 700
+            line-height: 72px
+            max-width: 516px
+            @media screen and ( max-width: 599px )
+                font-size: 42px
+            @media screen and ( max-width: 599px )
+                font-size: 32px
+                line-height: 62px
+            @media screen and ( max-width: 399px )
+                font-size: 18px
+                line-height: 42px
+                max-width: 250px
+                    
+        .home__description
+            color: var(--main)
+            font-size: 20px
+            font-family: var(--main-font)
+            font-weight: 400
+            line-height: 40px
+            max-width: 516px
+            @media screen and ( max-width: 599px )
+                font-size: 16px
+            @media screen and ( max-width: 599px )
+                font-size: 14px
+            @media screen and ( max-width: 399px )
+                max-width: 250px
+                font-size: 12px
+            @media screen and ( max-width: 340px )
+                font-size: 10px
+                line-height: 32px
+                
+        .home__form
+            display: flex
+            background: var(--light)
+            column-gap: 4px
+            border-radius: 8px
+            max-width: 516px
+            @media screen and ( max-width: 399px )
+                flex-direction: column
+                align-items: center
+                text-align: center
+            .home-form__input
+                padding: 8px 26px 8px 19px
+                width: 335px
+                font-size: 20px
+                color: #999
+                font-family: var(--main-font)
+                font-weight: 400
+                line-height: 32px
+                @media screen and ( max-width: 599px )
+                    width: 280px
+                    padding: 8px 22px 8px 14px
+                @media screen and ( max-width: 499px )
+                    width: 200px
+                @media screen and ( max-width: 399px )
+                    border-bottom: 1px solid #99999930
+                &::placeholder
+                    width: 335px
+                    font-size: 20px
+                    color: #999
+                    font-family: var(--main-font)
+                    font-weight: 400
+                    line-height: 32px
+                    @media screen and ( max-width: 599px )
+                        width: 280px
+                        font-size: 16px
+                    @media screen and ( max-width: 499px )
+                        width: 200px
+                        font-size: 12px
+
+            .home-form__btn
+                padding: 4px 5px 3px 5px
+                margin: 4px 4px 4px 0
+                background: var(--accent)
+                box-shadow: 0px 0px 2px 0px rgba(141, 128, 209, 0.56)
+                font-size: 20px
+                color: var(--light)
+                font-weight: 400
+                line-height: 32px
+                font-family: var(--main-font)
+                border-radius: 6px
+                @media screen and ( max-width: 599px )
+                    font-size: 14px
+                @media screen and ( max-width: 399px )
+                    padding: 4px 22px
+                    margin: 4px
+                    width: 90%
+                    
+                    
+    &__image
+        position: relative
+        top: 35px
+        background-image: url('./../img/home/home-image.jpg')
+        background-position: 100% 0
+        background-repeat: no-repeat
+        
+        width: 493px
+        height: 680px
+        @media screen and ( max-width: 540px )
+            width: 400px
+        @media screen and ( max-width: 440px )
+            width: 300px
+            height: 480px
+            background-position: 100% 100%
+        @media screen and ( max-width: 340px )
+            width: 220px
+        img
+            position: absolute
+            top: 0
+            left: -10%
+            @media screen and ( max-width: 650px )
+                left: 10%
+                top: -10%
+            @media screen and ( max-width: 540px )
+                left: 0
+                
+                
