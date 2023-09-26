@@ -2,13 +2,19 @@
     position: relative
     &__container
         padding-top: 110px
+        padding-bottom: 282px
         @media screen and ( max-width: 1299px )
-            padding: 110px 30px 0 30px
+            padding: 110px 30px 282px 30px
+        @media screen and ( max-width: 599px )
+            padding-bottom: 140px
     &__wrapper
         display: flex
         flex-direction: column
         align-items: flex-start
         row-gap: 100px
+        @media screen and ( max-width: 1299px )
+            align-items: center
+            text-align: center
     &__caption
         display: flex
         flex-direction: column
@@ -19,96 +25,30 @@
             font-family: var(--accent-font)
             font-weight: 700
             line-height: 56px
+            @media screen and ( max-width: 599px )
+                font-size: 28px
+            @media screen and ( max-width: 399px )
+                font-size: 22px
+            @media screen and ( max-width: 299px )
+                font-size: 18px
+                line-height: 46px
         .cta__description
             display: flex
             flex-direction: column
             max-width: 737px
-      
-
             .cta-desc__text
                 color: var(--main)
                 font-family: var(--main-font)
                 font-size: 20px
                 font-weight: 400
                 line-height: 40px
+                @media screen and ( max-width: 1299px )
+                    font-size: 16px
+                @media screen and ( max-width: 599px )
+                    font-size: 12px
+                    line-height: 32px
+                @media screen and ( max-width: 399px )
+                    font-size: 8px
+                    line-height: 26px
             .cta-desc__text-4
                 margin-top: 20px
-    &__form
-        background: var(--accent)
-        display: flex
-        align-items: center
-        // position: absolute
-        column-gap: 50px
-        top: 700px
-        border-radius: 16px
-        padding: 40px 0 40px 0
-        .cta-form__text
-            display: flex
-            flex-direction: column
-            padding-left: 64px
-            align-items: flex-start
-            row-gap: 11px
-            .cta-form__title
-                color: var(--light)
-                font-family: var(--accent-font)
-                font-size: 23px
-                font-weight: 700
-                line-height: 48px
-                max-width: 343px
-            .cta-form__description
-                color: var(--light)
-                font-family: var(--main-font)
-                font-size: 20px
-                font-weight: 400
-                max-width: 389px
-                line-height: 40px
-                @media screen and ( max-width: 999px )
-                    font-size: 14px
-            .cta-form-block
-                display: flex
-                background: var(--light)
-                column-gap: 4px
-                border-radius: 8px
-                max-width: 430px
-                @media screen and ( max-width: 1199px )
-                    flex-direction: column
-                    align-items: center
-                    text-align: center
-                .cta-form__input
-                    padding: 7px 11px 7px 15px
-                    width: 290px
-                    font-size: 18px
-                    color: #999
-                    font-family: var(--main-font)
-                    font-weight: 400
-                    line-height: 32px
-                    &::placeholder
-                        width: 290px
-                        font-size: 18px
-                        color: #999
-                        font-family: var(--main-font)
-                        font-weight: 400
-                        line-height: 32px
-                @media screen and ( max-width: 599px )
-                    width: 280px
-                    padding: 8px 22px 8px 14px
-                @media screen and ( max-width: 499px )
-                    width: 200px
-                @media screen and ( max-width: 399px )
-                    border-bottom: 1px solid #99999930
-                .cta-form__btn
-                    padding: 4px 5px 3px 5px
-                    margin: 4px 4px 4px 0
-                    background: var(--accent)
-                    box-shadow: 0px 0px 2px 0px rgba(141, 128, 209, 0.56)
-                    font-size: 20px
-                    color: var(--light)
-                    font-weight: 400
-                    line-height: 32px
-                    font-family: var(--main-font)
-                    border-radius: 6px
-                    transition: .3s linear
-
-                    &:hover
-                        transition: .3s linear
-                        background: var(--main)
