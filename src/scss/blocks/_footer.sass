@@ -1,0 +1,58 @@
+.footer
+    background: var(--accent-bg-1)
+    position: relative
+    &__wrapper
+        display: flex
+        flex-direction: column
+    .footer__form
+        position: absolute
+        display: flex
+        align-items: center
+        background: var(--accent)
+        border-radius: 16px
+        column-gap: 49px
+        .footer-form__text
+            display: flex
+            flex-direction: column
+            margin-left: 64px
+            .footer-text__title
+                color: var(--light)
+                font-family: var(--accent-font)
+                font-size: 23px
+                font-weight: 700
+                line-height: 48px
+            .footer-text__desc
+                color: var(--light)
+                font-family: var(--main-font)
+                font-size: 20px
+                font-weight: 400
+                line-height: 40px
+                max-width: 389px
+            .footer-form__input
+                display: flex
+                background: var(--light)
+                border-radius: 8px
+                column-gap: 4px
+                width: 420px
+                .footer-form-input__field
+                    width: 284px
+                    padding: 7px 17px 7px 11px
+                    font-size: 18px
+                    font-family: var(--main-font)
+                    color: #999
+                    line-height: 32px
+                    &::placeholder
+                        width: 284px
+                .footer-form-input__button
+                    background: var(--accent)
+                    font-size: 18px
+                    font-family: var(--main-font)
+                    color: var(--light)
+                    line-height: 32px
+                    font-weight: 400
+                    border-radius: 6px
+                    box-shadow: 0px 0px 2px 0px rgba(141, 128, 209, 0.56)
+                    padding: 11px 8px 11px 21px
+                    margin: 4px 0
+    &__media 
+        margin-top: 280px
